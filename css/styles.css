@@ -1,0 +1,303 @@
+@page {
+ size: A4;
+ margin: 0;
+}
+@media print {
+ html, body {
+   width: 210mm;
+   height: 297mm;
+ }
+}
+
+@font-face {
+    font-family: 'GillSans';
+    src: url('fonts/GillSans.otf');
+}
+
+@font-face {
+    font-family: 'GillSansLight';
+    src: url('fonts/GillSansLight.otf')
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('fonts/Helvetica.ttf');
+}
+
+body {
+    width: 100%;
+    min-width: 1000px;
+    height: 100%;
+    margin: auto;
+    padding: 0px;
+    font-family: 'GillSans';
+    
+}
+
+.cv {
+    width: 1000px;
+    margin: auto;
+    background-color: #ffdbce;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    
+}
+
+.head {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0px;
+}
+
+img {
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 25px;
+    display:block;
+}
+
+#name {
+    font-family: 'GillSansLight';
+    color: #130d28;
+    letter-spacing: 4px;
+    margin-bottom: 5px;
+}
+
+#nameunderline {
+    width: inherit;
+    height: 2px;
+    background: linear-gradient(to right, black , rgba(255,0,0,0) 40%)
+}
+
+#jobtitle {
+    text-transform: uppercase;
+    color: #748c7a;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+#headbar {
+    height: 30px;
+    width: 100%;
+    background-color: #877556;
+}
+
+#image {
+    width: 25%;
+    
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.info:nth-child(2)
+{
+    flex: 1;
+}
+
+
+#namejob {
+    width: 62%;
+}
+
+#links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+#links div {
+    margin-bottom: 10px;
+}
+
+.link {
+    margin-bottom: 8px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: right;
+    text-decoration: none;
+    font-size: 16px;
+    color: #191816;
+}
+
+#status {
+    line-height: 1.4;
+}
+
+#sepa {
+    width: inherit;
+    height: 20px;
+    background-color: #f7eee1;
+}
+
+#maincontent {
+    margin-top: 10px;
+}
+
+.title {
+    color: #877556;
+    font-family: 'GillSans';
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: right;
+    letter-spacing: 10px;
+    /*background-color: #fff7db;*/
+    margin-right: 5px;
+    margin-top: 5px;
+    width: 300px;
+    /*background-image: linear-gradient(135deg, #d3dced 0%, rgba(255,0,0,0))*/
+}
+
+section {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-family: 'GillSans';
+    color: #140e2b;
+}
+
+.sepline {
+    width:inherit;
+    height: 2px;
+    background-color: #ede0ce;
+}
+
+section:nth-child(3) {
+    flex: 2;
+}
+
+.sline {
+    height: inherit;
+    width: 2px;
+    background: linear-gradient(to bottom, rgba(255,0,0,0) 0%, #877556 10%, rgba(255,0,0,0) 80%);
+}
+
+.content {
+    margin-left: 5px;
+}
+
+.block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 5px;
+    margin-left: 5px;
+    line-height: 1.2;
+    width: 650px;
+}
+
+
+.timeline {
+    font-size: 16px;
+    text-align: right;
+    margin-left: 50px;
+}
+
+h3 {
+    font-size: 16px;
+    line-height: 0
+}
+
+h3 + p {
+    padding-left: 20px;
+    color: #3d3d3d;
+    width: 420px;
+}
+
+#hobbies {
+    margin:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 200px;
+    height: ;
+    
+}
+
+.subinfo {
+    display:flex;
+    flex-direction: row;
+    background-color: #896737;
+    color: #fff6ea;
+    height: 200px
+}
+
+.subinfo div {
+    margin-right: px;
+}
+
+.subinfo > .languages {
+    flex: 1;
+}
+
+.tieude {
+    line-height: 0.9;
+    color: #fff6ea;
+    font-family: 'GillSans';
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.programming {
+    width: 70%;
+}
+
+#list {
+    margin-right: 40px;
+    margin-top: 0px;
+}
+
+li {
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.6;
+}
+
+.slline {
+    height: inherit;
+    width: 2px;
+    background: linear-gradient(to bottom, rgba(255,0,0,0) 0%, white 50%, rgba(255,0,0,0) 100%)
+}
+.languages {
+    width: 30%;
+}
+
+#lans {
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-left: -10px;
+}
+
+#lans > li {
+    margin: 20px;
+}
+
+li span {
+    letter-spacing: 3px;
+    font-style: 
+}
+
+#footbar {
+    height: 25px;
+    background-color: #1e1c18;
+    color: white;
+    text-align: center;
+}
+
+#footbar span {
+    display: inline-block;
+    margin-top: 6px;
+    font-size: 14px;
+}
+
+
+
